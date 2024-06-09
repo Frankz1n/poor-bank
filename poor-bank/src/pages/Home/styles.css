@@ -1,0 +1,67 @@
+.containerHome {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.textContainer {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.firstText {
+  width: fit-content;
+  height: fit-content;
+  color: #fff;
+  font-size: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.secondText {
+  width: fit-content;
+  height: fit-content;
+  color: #fff;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.register {
+  width: 400px;
+  height: 440px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  box-shadow: offset-x offset-y blur-radius spread-radius color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.register > h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.register > input {
+  width: 70%;
+  height: 30px;
+  border: none;
+  padding: 5px;
+}
+
+.register > button {
+  width: 70%;
+  height: 30px;
+  border: none;
+  border-radius: 32px;
+  background-color: #3e75cf;
+  color: #fff;
+}
