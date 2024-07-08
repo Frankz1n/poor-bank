@@ -1,5 +1,6 @@
+import ButtonDefault from "../../components/ButtonDefault/ButtonDefault";
 import HeaderDefault from "../../components/HeaderDefault/HeaderDefault";
-import Input from "../../components/input/Input";
+import InputDefault from "../../components/InputDefault/InputDefault";
 import "./styles.css";
 
 export default function Ticket() {
@@ -9,7 +10,10 @@ export default function Ticket() {
       <HeaderDefault />
       <div className="content">
         <div className="card">
-        </div>
+          <InputDefault type={'number'} name={'Número do Boleto'} width={'80%'} />
+          <div className="spaceBetween"></div>
+          <ButtonDefault label={'Pagar'}/>
+        </div>        
       </div>
     </div>
   );
