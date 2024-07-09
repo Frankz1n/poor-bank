@@ -1,0 +1,54 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.top {
+  width: 100%;
+  min-height: 33vh;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.topContent {
+  width: 400px;
+  height: 200px;
+}
+
+.title {
+  color: white;
+}
+
+.balance {
+  width: 250px;
+  height: 80px;
+  background-color: #d9d9d9;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.balance > div {
+  font-size: 20px;
+}
+
+.midle {
+  width: 100%;
+  min-height: 33vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bottom {
+  background-color: yellow;
+  width: 100%;
+  min-height: 33vh;
+}

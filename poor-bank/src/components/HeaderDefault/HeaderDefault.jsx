@@ -1,4 +1,4 @@
-import "./styles.css";
+import styles from "./HeaderDefault.module.css";
 
 import logoWallet from "../../assets/poorbankLogoWallet.png";
 import logoText from "../../assets/logoText.png";
@@ -8,19 +8,19 @@ import helpIcon from "../../assets/helpIcon.png";
 
 export default function HeaderDefault() {
   return (
-    <div className="container">
-      <div className="leftContent">
-        <img className="userIcon" src={userIcon} alt="user-icon"></img>
+    <div className={styles.container}>
+      <div className={styles.leftContent}>
+        <img className={styles.userIcon} src={userIcon} alt="user-icon"></img>
       </div>
 
-      <div className="logo">
-        <img className="logoWallet" src={logoWallet} alt="logo-img" />
-        <img className="logoText" src={logoText} alt="logo-text" />
+      <div className={styles.logo}>
+        <img className={styles.logoWallet} src={logoWallet} alt="logo-img" />
+        <img className={styles.logoText} src={logoText} alt="logo-text" />
       </div>
 
-      <div className="rightContent">
-        <img className="helpIcon" src={helpIcon} alt="help-icon" />
-        <img className="emailIcon" src={emailIcon} alt="email-icon" />
+      <div className={styles.rightContent}>
+        <img className={styles.helpIcon} src={helpIcon} alt="help-icon" />
+        <img className={styles.emailIcon} src={emailIcon} alt="email-icon" />
       </div>
     </div>
   );

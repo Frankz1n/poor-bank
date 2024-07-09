@@ -8,6 +8,7 @@
   justify-content: start;
   padding: 10px;
   box-sizing: border-box;
+  border-bottom: 4px solid white;
 }
 
 .logo {
