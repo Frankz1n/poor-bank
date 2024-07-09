@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import "./main.css";
 import Home from "./pages/Home/home";
+
 import Login from "./pages/Login/login";
 import UserScreen from "./pages/PrincipalScreen/principalScreen";
 import Ticket from "./pages/Ticket/ticket";

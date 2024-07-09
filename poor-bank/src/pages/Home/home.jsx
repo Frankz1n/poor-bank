@@ -1,7 +1,14 @@
 import Header from "../../components/HeaderHome/Header";
 import styles from "./home.module.css";
 
+import { useNavigate } from "react-router-dom";
+
 export default function Home() {
+  const navigate = useNavigate();
+
+  const toRegister = () => {
+    navigate("/register");
+  };
   return (
     <div className={styles.containerHome}>
       <Header />
