@@ -1,0 +1,81 @@
+.containerRegister {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+.contentLeft {
+  width: 50%;
+  height: 100vh;
+  background-color: #3e75cf;
+}
+
+.separation {
+  background-color: white;
+  width: 5px;
+}
+.contentRight {
+  width: 50%;
+  height: 100vh;
+  background-color: #ababab;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cadContainer-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cadContainer {
+  background-color: #d9d9d9;
+  width: 60%;
+  height: 75%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cadContainer > h1 {
+  color: white;
+  font-size: 64px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #3e75cf;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.button-text {
+  color: white;
+  font-size: 20px;
+}
+
+.button-arrow {
+  width: 20px;
+}
+
+.text-alternative {
+  color: #595959;
+  font-weight: bold;
+}
+
+.text-alternative > span {
+  color: #1393db;
+  cursor: pointer;
+}

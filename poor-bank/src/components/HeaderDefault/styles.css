@@ -1,0 +1,74 @@
+.container {
+  width: 100%;
+  min-height: 56px;
+  background-color: #3e75cf;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 80%;
+  height: fit-content;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.logoWallet {
+  width: 50px;
+}
+
+.logoText {
+  width: 150px;
+  margin-top: 10px;
+}
+
+.leftContent {
+  width: 10%;
+  min-height: 56px;
+  display: flex;
+}
+
+.userIcon {
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.rightContent {
+  width: 10%;
+  min-height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.helpIcon {
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin: 6%;
+}
+
+.emailIcon {
+  width: 55px;
+  height: 55px;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin: 6%;
+}
