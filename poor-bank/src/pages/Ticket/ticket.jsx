@@ -10,6 +10,7 @@ export default function Ticket() {
       <HeaderDefault />
       <div className="content">
         <div className="card">
+          <h1>Pagar Boleto</h1>
           <InputDefault type={'number'} name={'Número do Boleto'} width={'80%'} />
           <div className="spaceBetween"></div>
           <ButtonDefault label={'Pagar'}/>

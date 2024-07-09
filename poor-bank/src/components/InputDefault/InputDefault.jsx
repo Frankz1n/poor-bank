@@ -3,7 +3,6 @@ import style from "./InputDefault.module.css";
 export default function InputDefault({ type, name, width }) {
   return (
     <div className={style.inputContainer} onChange={(e) => setInputValue(e.target.value)} style={{ width: width }}>
-        <h1>Pagar Boleto</h1>
       <input
         placeholder={name} 
         className={style.input}
