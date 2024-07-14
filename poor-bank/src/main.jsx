@@ -10,6 +10,7 @@ import Ticket from "./pages/Ticket/ticket";
 import Register from "./pages/Register/register";
 import Investing from "./pages/Investing/Investing";
 import Pix from "./pages/Pix/Pix";
+import Transfer from "./pages/Transfer/Transfer";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -22,6 +23,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/investimento" element={<Investing />} />
         <Route path="/pix" element={<Pix />} />
         <Route path="/ticket" element={<Ticket />} />
+        <Route path="/transferencia" element={<Transfer />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
