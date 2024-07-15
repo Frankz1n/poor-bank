@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  gap: 20px;
+}
+.container > h1 {
+  color: white;
+}
+
+.loanContainer {
+  background-color: #d9d9d9;
+  width: 800px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 12px;
+}
+
+.select {
+  width: 150px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid blue;
+}
+
+.empSoli {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+.empSoliInput {
+  display: flex;
+  gap: 10px;
+}

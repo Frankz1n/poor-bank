@@ -11,6 +11,7 @@ import Register from "./pages/Register/register";
 import Investing from "./pages/Investing/Investing";
 import Pix from "./pages/Pix/Pix";
 import Transfer from "./pages/Transfer/Transfer";
+import Loan from "./pages/Loan/Loan";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -24,6 +25,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/pix" element={<Pix />} />
         <Route path="/ticket" element={<Ticket />} />
         <Route path="/transferencia" element={<Transfer />} />
+        <Route path="/emprestimo" element={<Loan />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
