@@ -1,9 +1,37 @@
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./Login.module.css";
 
 import InputDefault from "../../components/InputDefault/InputDefault";
 import arrow from "../../assets/arrowRight.png";
 
 export default function Login() {
+  const [cpf, setCpf] = useState("");
+  const [senha, setSenha] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+    const usuarioEncontrado = usuarios.find(
+      (usuario) => usuario.cpf === cpf && usuario.senha === senha
+    );
+
+    if (usuarioEncontrado) {
+      // Salva o nome do usuário logado no localStorage "usuarioLogado"
+      localStorage.setItem(
+        "usuarioLogado",
+        JSON.stringify({ nome: usuarioEncontrado.nome })
+      );
+
+      alert("Login realizado com sucesso");
+      navigate("/userscreen"); // Redireciona para o dashboard ou a página principal
+    } else {
+      alert("Conta não existente");
+    }
+  };
+
   return (
     <div className={styles.containerRegister}>
       <div className={styles.contentLeft}>ola</div>
@@ -11,27 +39,32 @@ export default function Login() {
       <div className={styles.contentRight}>
         <div className={styles.cadContainer}>
           <h1>Login</h1>
-          <div className={styles.cadContaineInputs}>
+          <form className={styles.cadContaineInputs} onSubmit={handleSubmit}>
             <InputDefault
               type="text"
-              name="name"
+              name="cpf"
               placeholder="Digite seu CPF"
               width="300px"
+              value={cpf}
+              onChange={(e) => setCpf(e.target.value)}
             />
             <InputDefault
               type="password"
-              name="name"
+              name="senha"
               placeholder="Digite sua senha"
               width="300px"
+              value={senha}
+              onChange={(e) => setSenha(e.target.value)}
             />
-          </div>
-          <button className={styles.button}>
-            <p className={styles.buttonText}>Continuar</p>
-            <img className={styles.buttonArrow} src={arrow} alt="seta" />
-          </button>
+            <button className={styles.button} type="submit">
+              <p className={styles.buttonText}>Continuar</p>
+              <img className={styles.buttonArrow} src={arrow} alt="seta" />
+            </button>
+          </form>
         </div>
         <p className={styles.textAlternative}>
-          Já possui uma conta? <span>Clique aqui</span>
+          Não possui uma conta?{" "}
+          <span onClick={() => navigate("/register")}>Clique aqui</span>
         </p>
       </div>
     </div>

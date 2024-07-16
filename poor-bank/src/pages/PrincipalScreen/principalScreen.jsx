@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import HeaderDefault from "../../components/HeaderDefault/HeaderDefault";
 import ItemBox from "../../components/ItemBox/ItemBox";
 import styles from "./principalScreen.module.css";
@@ -10,20 +11,38 @@ import emprest from "../../assets/emprestIcon.png";
 import ButtonDefault from "../../components/ButtonDefault/ButtonDefault";
 
 export default function UserScreen() {
+  const [userName, setUserName] = useState("");
+  const [saldo, setSaldo] = useState(0);
+  useEffect(() => {
+    const user = JSON.parse(localStorage.getItem("usuarioLogado"));
+    if (user && user.nome) {
+      setUserName(user.nome);
+
+      const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+      const usuarioEncontrado = usuarios.find(
+        (usuario) => usuario.nome === user.nome
+      );
+
+      if (usuarioEncontrado && usuarioEncontrado.saldo) {
+        setSaldo(usuarioEncontrado.saldo);
+      }
+    }
+  }, []);
+
   return (
     <div className={styles.container}>
       <HeaderDefault />
       <div className={styles.body}>
         <div className={styles.top}>
           <div className={styles.topContent}>
-            <h1 className={styles.title}>Olá, Usuário</h1>
+            <h1 className={styles.title}>Olá, {userName}</h1>
             <div className={styles.balance}>
               <div>SALDO</div>
-              <div>R$ 225,25</div>
+              <div>R$ {saldo.toFixed(2)}</div>
             </div>
           </div>
         </div>
-        <div className={styles.midle}>
+        <div className={styles.middle}>
           <ItemBox img={scam} text="Pagar Boleto" />
           <ItemBox img={pix} text="Área Pix" />
           <ItemBox img={transfer} text="Transferir" />
