@@ -27,7 +27,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/ticket" element={<Ticket />} />
         <Route path="/transferencia" element={<Transfer />} />
         <Route path="/emprestimo" element={<Loan />} />
-        <Route path="/statement" element={<PayCard />} />
+        <Route path="/payCard" element={<PayCard />} />
         <Route path="/pixKeys" element={<Loan />} />
       </Routes>
     </BrowserRouter>
