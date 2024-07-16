@@ -12,6 +12,7 @@ import Investing from "./pages/Investing/Investing";
 import Pix from "./pages/Pix/Pix";
 import Transfer from "./pages/Transfer/Transfer";
 import Loan from "./pages/Loan/Loan";
+import PayCard from "./pages/PayCard/payCard";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -26,6 +27,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/ticket" element={<Ticket />} />
         <Route path="/transferencia" element={<Transfer />} />
         <Route path="/emprestimo" element={<Loan />} />
+        <Route path="/statement" element={<PayCard />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

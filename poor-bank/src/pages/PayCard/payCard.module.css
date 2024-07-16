@@ -1,0 +1,44 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card {
+    background-color: #3E75CF;
+    width: 45%;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-family:  "Inter", sans-serif;
+}
+
+.tableContent {
+    margin-top: 20px;
+    width: 45%;
+    height: 400px;
+}
+
+table {
+    width: 100%;
+    height: 400px;
+    font-size: 46px;
+    font-family:  "Inter", sans-serif;
+}
+
+tr {
+    display: flex;
+    justify-content:space-between
+}
