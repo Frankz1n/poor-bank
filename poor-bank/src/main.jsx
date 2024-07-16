@@ -13,6 +13,7 @@ import Pix from "./pages/Pix/Pix";
 import Transfer from "./pages/Transfer/Transfer";
 import Loan from "./pages/Loan/Loan";
 import PixKeys from "./pages/PixKeys/PixKeys";
+import PayCard from "./pages/PayCard/payCard";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -21,14 +22,14 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/" element={<Home />} />
         <Route path="registro" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/userscreen" element={<UserScreen />} />
+        <Route path="/tela-usuario" element={<UserScreen />} />
         <Route path="/investimento" element={<Investing />} />
         <Route path="/pix" element={<Pix />} />
-        <Route path="/ticket" element={<Ticket />} />
+        <Route path="/boletos" element={<Ticket />} />
         <Route path="/transferencia" element={<Transfer />} />
         <Route path="/emprestimo" element={<Loan />} />
-        <Route path="/payCard" element={<PayCard />} />
-        <Route path="/pixKeys" element={<Loan />} />
+        <Route path="/fatura-cartao" element={<PayCard />} />
+        <Route path="/chaves-pix" element={<Loan />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

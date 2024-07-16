@@ -1,44 +1,46 @@
 .container {
-    width: 100%;
-    min-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .body {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .card {
-    background-color: #3E75CF;
-    width: 45%;
-    height: 200px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: larger;
-    font-family:  "Inter", sans-serif;
+  background-color: #3e75cf;
+  width: 45%;
+  height: 200px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  font-family: "Inter", sans-serif;
 }
 
 .tableContent {
-    margin-top: 20px;
-    width: 45%;
-    height: 400px;
+  margin-top: 20px;
+  width: 45%;
+  height: 400px;
 }
 
 table {
-    width: 100%;
-    height: 400px;
-    font-size: 46px;
-    font-family:  "Inter", sans-serif;
+  width: 100%;
+  height: 400px;
+  font-size: 46px;
+  font-family: "Inter", sans-serif;
 }
 
 tr {
-    display: flex;
-    justify-content:space-between
+  display: flex;
+  justify-content: space-between;
 }

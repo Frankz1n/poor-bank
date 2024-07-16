@@ -1,14 +1,24 @@
+import React, { useState } from "react";
 import Header from "../../components/HeaderHome/Header";
 import styles from "./home.module.css";
-
 import { useNavigate } from "react-router-dom";
 
 export default function Home() {
   const navigate = useNavigate();
+  const [cpf, setCpf] = useState("");
 
-  const toRegister = () => {
-    navigate("/register");
+  const handleContinue = () => {
+    // Verifica se o CPF existe no localStorage "usuarios"
+    const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+    const usuarioExistente = usuarios.find((usuario) => usuario.cpf === cpf);
+
+    if (usuarioExistente) {
+      navigate("/login");
+    } else {
+      navigate("/registro");
+    }
   };
+
   return (
     <div className={styles.containerHome}>
       <Header />
@@ -24,8 +34,13 @@ export default function Home() {
         </div>
         <div className={styles.register}>
           <h3>Crie sua conta aqui!</h3>
-          <input type="text" placeholder="Digite seu CPF" />
-          <button>Continuar</button>
+          <input
+            type="text"
+            placeholder="Digite seu CPF"
+            value={cpf}
+            onChange={(e) => setCpf(e.target.value)}
+          />
+          <button onClick={handleContinue}>Continuar</button>
         </div>
       </div>
     </div>
