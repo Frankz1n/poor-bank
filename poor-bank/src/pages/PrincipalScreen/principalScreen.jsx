@@ -101,7 +101,7 @@ export default function UserScreen() {
               <h2>Cartão de crédito</h2>
               <div className={styles.invoice}>
                 <h3>Fatura atual</h3>
-                <h2>R$ 225,00</h2>
+                <h2>R$ 535,12</h2>
               </div>
             </div>
           </div>
