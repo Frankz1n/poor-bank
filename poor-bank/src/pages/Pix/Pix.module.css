@@ -59,3 +59,57 @@
 .space {
   width: 50px;
 }
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-family: "Inter", sans-serif;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-title {
+  font-size: 30px;
+  color: blue;
+}
+
+.modal-text {
+  font-size: 20px;
+}
+
+.modal-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.modal-buttons > button {
+  width: 150px;
+  height: 30px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.modalIcon {
+  width: 100px;
+}

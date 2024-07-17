@@ -55,8 +55,6 @@ export default function UserScreen() {
   };
 
   return (
-    // arrumar valor da fatura do cartao de credito para que passe para a tela
-    // da fatura do cartao
     <div className={styles.container}>
       <HeaderDefault />
       <div className={styles.body}>
