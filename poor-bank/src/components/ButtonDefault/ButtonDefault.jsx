@@ -8,7 +8,6 @@ export default function ButtonDefault({ label, width, height, onClick }) {
       style={{ width: width, height: height }}
     >
       <button onClick={onClick} className={style.button}>
-        {" "}
         {label}{" "}
       </button>
     </div>
