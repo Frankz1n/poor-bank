@@ -8,7 +8,6 @@ export default function Home() {
   const [cpf, setCpf] = useState("");
 
   const handleContinue = () => {
-    // Verifica se o CPF existe no localStorage "usuarios"
     const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
     const usuarioExistente = usuarios.find((usuario) => usuario.cpf === cpf);
 

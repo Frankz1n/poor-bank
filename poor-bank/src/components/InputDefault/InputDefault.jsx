@@ -18,7 +18,6 @@ export default function InputDefault({
         value={value}
         onChange={onChange}
       />
-      <div className={style.line}></div>
     </div>
   );
 }

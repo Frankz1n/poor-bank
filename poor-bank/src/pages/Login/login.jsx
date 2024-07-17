@@ -19,14 +19,13 @@ export default function Login() {
     );
 
     if (usuarioEncontrado) {
-      // Salva o nome do usuário logado no localStorage "usuarioLogado"
       localStorage.setItem(
         "usuarioLogado",
         JSON.stringify({ nome: usuarioEncontrado.nome })
       );
 
       alert("Login realizado com sucesso");
-      navigate("/tela-usuario"); // Redireciona para o dashboard ou a página principal
+      navigate("/tela-usuario");
     } else {
       alert("Conta não existente");
     }

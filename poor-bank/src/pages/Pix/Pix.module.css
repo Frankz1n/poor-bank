@@ -29,6 +29,13 @@
   margin-left: 200px;
 }
 
+.saldoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
 .cardContainer {
   width: 100%;
   height: 70vh;
@@ -54,8 +61,16 @@
   margin-top: 50px;
   display: flex;
   justify-content: left;
+  align-items: center;
 }
 
+.select {
+  width: 100px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid blue;
+}
 .space {
   width: 50px;
 }

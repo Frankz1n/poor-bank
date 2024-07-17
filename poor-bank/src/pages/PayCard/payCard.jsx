@@ -12,9 +12,6 @@ export default function PayCard() {
     { data: "10 JUN", item: "Rolex", preco: "R$ 35,12" },
   ];
   return (
-    // pegar valor da fatura do cartao da pagina de usuario,
-    // para que sejam os mesmos valores,
-    // tentar criar algumas compras
     <div className={styles.container}>
       <HeaderDefault />
       <div className={styles.body}>

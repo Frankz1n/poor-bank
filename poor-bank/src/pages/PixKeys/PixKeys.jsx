@@ -4,9 +4,6 @@ import InputDefault from "../../components/InputDefault/InputDefault";
 import style from "./pixKeys.module.css";
 
 export default function PixKeys() {
-  // colocar o saldo nessa tela,
-  // nao deixar fazer um pix maior que o saldo,
-  // subtrair o valor do pix do saldo do usuario
   return (
     <div className={style.container}>
       <div className={style.header}>
