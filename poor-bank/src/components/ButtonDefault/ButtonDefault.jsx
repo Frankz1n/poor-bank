@@ -1,13 +1,16 @@
 import style from "./ButtonDefault.module.css";
 
-export default function ButtonDefault({ label, width, height }) {
+export default function ButtonDefault({ label, width, height, onClick }) {
   return (
     <div
       className={style.container}
       onChange={(e) => setInputValue(e.target.value)}
       style={{ width: width, height: height }}
     >
-      <button className={style.button}> {label} </button>
+      <button onClick={onClick} className={style.button}>
+        {" "}
+        {label}{" "}
+      </button>
     </div>
   );
 }

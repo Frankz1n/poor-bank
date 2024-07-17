@@ -11,10 +11,17 @@ export default function Ticket() {
       <div className="content">
         <div className="card">
           <h1>Pagar Boleto</h1>
-          <InputDefault type={'number'} name={'Número do Boleto'} width={'80%'} />
+          <InputDefault
+            type={"number"}
+            name={"Número do Boleto"}
+            width={"80%"}
+          />
           <div className="spaceBetween"></div>
-          <ButtonDefault label={'Pagar'}/>
-        </div>        
+          <ButtonDefault label={"Pagar"} />
+          {/* criar um modal para quando clicar em pagar boleto, 
+          apareça o modal com uma mensagem de que o boleto foi pago
+          com o código do boleto */}
+        </div>
       </div>
     </div>
   );

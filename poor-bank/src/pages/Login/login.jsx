@@ -26,7 +26,7 @@ export default function Login() {
       );
 
       alert("Login realizado com sucesso");
-      navigate("/userscreen"); // Redireciona para o dashboard ou a página principal
+      navigate("/tela-usuario"); // Redireciona para o dashboard ou a página principal
     } else {
       alert("Conta não existente");
     }

@@ -7,6 +7,8 @@ import InputDefault from "../../components/InputDefault/InputDefault";
 import ButtonDefault from "../../components/ButtonDefault/ButtonDefault";
 
 export default function Investing() {
+  // ajeitar saldo do usuario para que puxe do localStorage,
+  // mostrar modal confirmando o investimento
   return (
     <div>
       <HeaderDefault />

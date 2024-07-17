@@ -9,10 +9,12 @@ import transfer from "../../assets/transferIcon.png";
 import invest from "../../assets/investIcon.png";
 import emprest from "../../assets/emprestIcon.png";
 import ButtonDefault from "../../components/ButtonDefault/ButtonDefault";
+import { useNavigate } from "react-router-dom";
 
 export default function UserScreen() {
   const [userName, setUserName] = useState("");
   const [saldo, setSaldo] = useState(0);
+  const navigate = useNavigate();
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("usuarioLogado"));
     if (user && user.nome) {
@@ -29,7 +31,32 @@ export default function UserScreen() {
     }
   }, []);
 
+  const handleToPage = (op) => {
+    switch (op) {
+      case 1:
+        navigate("/boletos");
+        break;
+      case 2:
+        navigate("/pix");
+        break;
+      case 3:
+        navigate("/transferencia");
+        break;
+      case 4:
+        navigate("/investimento");
+        break;
+      case 5:
+        navigate("/emprestimo");
+        break;
+      case 6:
+        navigate("/fatura-cartao");
+        break;
+    }
+  };
+
   return (
+    // arrumar valor da fatura do cartao de credito para que passe para a tela
+    // da fatura do cartao
     <div className={styles.container}>
       <HeaderDefault />
       <div className={styles.body}>
@@ -44,11 +71,27 @@ export default function UserScreen() {
         </div>
 
         <div className={styles.icons}>
-          <ItemBox img={scam} text="Pagar Boleto" />
-          <ItemBox img={pix} text="Área Pix" />
-          <ItemBox img={transfer} text="Transferir" />
-          <ItemBox img={invest} text="Investir" />
-          <ItemBox img={emprest} text="Pedir Empréstimo" />
+          <ItemBox
+            onClick={() => handleToPage(1)}
+            img={scam}
+            text="Pagar Boleto"
+          />
+          <ItemBox onClick={() => handleToPage(2)} img={pix} text="Área Pix" />
+          <ItemBox
+            onClick={() => handleToPage(3)}
+            img={transfer}
+            text="Transferir"
+          />
+          <ItemBox
+            onClick={() => handleToPage(4)}
+            img={invest}
+            text="Investir"
+          />
+          <ItemBox
+            onClick={() => handleToPage(5)}
+            img={emprest}
+            text="Pedir Empréstimo"
+          />
         </div>
 
         <div className={styles.separation}></div>
@@ -63,7 +106,12 @@ export default function UserScreen() {
             </div>
           </div>
           <div className={styles.bottomContent2}>
-            <ButtonDefault label="Pagar Cartão" width="150px" height="40px" />
+            <ButtonDefault
+              onClick={() => handleToPage(6)}
+              label="Pagar Cartão"
+              width="150px"
+              height="40px"
+            />
             <div className={styles.bottomContent2Arrow}>{">"}</div>
           </div>
         </div>

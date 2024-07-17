@@ -7,6 +7,9 @@ import InputDefault from "../../components/InputDefault/InputDefault";
 
 export default function Transfer() {
   return (
+    // colocar saldo do usuario na tela,
+    // não deixar fazer uma transferencia maior q saldo,
+    // subtrair do saldo o valor da transferencia.
     <div>
       <HeaderDefault />
       <div className={styles.container}>

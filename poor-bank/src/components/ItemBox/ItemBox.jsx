@@ -1,8 +1,8 @@
 import styles from "./ItemBox.module.css";
 
-export default function ItemBox({ img, text }) {
+export default function ItemBox({ img, text, onClick }) {
   return (
-    <div className={styles.container}>
+    <div onClick={onClick} className={styles.container}>
       <div>
         <img className={styles.img} src={img} alt={text} />
       </div>
