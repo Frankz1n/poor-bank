@@ -1,58 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 .container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
 }
 
 .header {
-    width: 100%;
-    height: 12%;
+  width: 100%;
+  height: 12%;
 }
 
 .content {
-    margin-top: 30px;
-    width: 100%;
-    height: 90%;
+  margin-top: 30px;
+  width: 100%;
+  height: 90%;
 }
 
 .tituloPix {
-    color: white;
-    margin-left: 200px ;
+  color: white;
+  margin-left: 200px;
 }
 
 .subTituloPix {
-    color: white;
-    margin-left: 200px ;
+  color: white;
+  margin-left: 200px;
 }
 
 .cardContainer {
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
-    background-color: #d9d9d9;
-    width: 80%;
-    height: 500px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: #d9d9d9;
+  width: 80%;
+  height: 500px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cardContent {
-    width: 100%;
-    height: 100%;
-    margin-left: 75px;
-    margin-top: 50px;
-    display: flex;
-    justify-content: left;
+  width: 100%;
+  height: 100%;
+  margin-left: 75px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: left;
 }
 
 .space {
-    width: 50px;
+  width: 50px;
 }
