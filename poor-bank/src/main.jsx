@@ -29,7 +29,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/transferencia" element={<Transfer />} />
         <Route path="/emprestimo" element={<Loan />} />
         <Route path="/fatura-cartao" element={<PayCard />} />
-        <Route path="/chaves-pix" element={<Loan />} />
+        <Route path="/chaves-pix" element={<PixKeys />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

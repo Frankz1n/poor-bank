@@ -38,17 +38,19 @@ export default function UserScreen() {
             <h1 className={styles.title}>Olá, {userName}</h1>
             <div className={styles.balance}>
               <div>SALDO</div>
-              <div>R$ {saldo.toFixed(2)}</div>
+              <div>R$ {saldo}</div>
             </div>
           </div>
         </div>
-        <div className={styles.middle}>
+
+        <div className={styles.icons}>
           <ItemBox img={scam} text="Pagar Boleto" />
           <ItemBox img={pix} text="Área Pix" />
           <ItemBox img={transfer} text="Transferir" />
           <ItemBox img={invest} text="Investir" />
           <ItemBox img={emprest} text="Pedir Empréstimo" />
         </div>
+
         <div className={styles.separation}></div>
         <div className={styles.bottom}>
           <div className={styles.bottomContent1}>

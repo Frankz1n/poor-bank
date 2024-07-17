@@ -48,12 +48,11 @@
   font-size: 20px;
 }
 
-.midle {
-  width: 100%;
-  min-height: 33vh;
+.icons {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 30px;
 }
 
 .separation {
